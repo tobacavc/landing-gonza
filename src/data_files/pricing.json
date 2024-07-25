@@ -1,0 +1,36 @@
+{
+  "title": "Seguros Destacados",
+  "subTitle": "Nuestros seguros mas vendidos.",
+  "badge": "PRECIO OFERTA",
+  "btnText": "COTIZAR",
+
+  "starterKit": {
+    "name": "Seguro de Auto",
+    "description": "Mejor opción para asegurar su vehículo",
+    "price": "49",
+    "cents": ".00",
+    "billingFrequency": "CLP / MES",
+    "features": [
+      "Daños",
+      "Robo",
+      "Accidente"
+    ],
+    "purchaseBtnTitle": "Quiero Contratar",
+    "purchaseLink": "#"
+  },
+
+  "professionalToolbox": {
+    "name": "Seguro de Vida",
+    "description": "La mejor desición para ti y tu familia",
+    "price": "89",
+    "cents": ".00",
+    "billingFrequency": "CLP / MES",
+    "features": [
+      "Protección financiera en caso de fallecimiento.",
+      "Protección en caso de accidente vehicular.",
+      "Protección en caso de accidente laboral."
+    ],
+    "purchaseBtnTitle": "Quiero Contratar",
+    "purchaseLink": "#"
+  }
+}
