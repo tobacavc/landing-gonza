@@ -6,6 +6,7 @@ import CardSmall from "@components/ui/cards/CardSmall.astro";
 import CardWide from "@components/ui/cards/CardWide.astro";
 import FeaturesStatsAlt from "@components/sections/features/FeaturesStatsAlt.astro";
 import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
+import CardProduct from "./CardProduct.astro";
 
 // Importing necessary functions from Astro
 import { getCollection } from "astro:content";
@@ -60,6 +61,12 @@ const testimonials = [
 ];
 
 const pageTitle: string = `Products | ${SITE.title}`;
+
+const { titulo, tabs } = Astro.props
+
+// Define TypeScript interface for tab object
+
+
 ---
 
 <MainLayout
@@ -100,8 +107,23 @@ const pageTitle: string = `Products | ${SITE.title}`;
       </div>
       <PrimaryCTA title="Comentarios de Cientes" url="#testimonials" noArrow={true} />
     </div>
-    <div class="bg-neutral-100 rounded-lg w-full h-[400px]">
-      
+    <div class="bg-neutral-100 rounded-lg w-full h-[400px] grid grid-cols-3 content-center">
+      <CardProduct 
+        title="Seguro de Automóviles"
+        content="Protege tu vehículo contra daños, robo, y accidentes, ofreciendo coberturas de responsabilidad civil y asistencia en carretera."
+      />
+      <CardProduct 
+        title="Seguro de Hogar"
+        content="Protege tu vivienda y sus contenidos contra riesgos como incendios, robos, y desastres naturales, asegurando la tranquilidad de tu hogar."
+      />
+      <CardProduct 
+        title="Seguro de Incendio y Terremoto"
+        content="Cubre los daños estructurales y pérdidas causadas por incendios y terremotos, salvaguardando tu propiedad ante desastres naturales."
+      />
+      <CardProduct 
+        title="Seguro de Incendio y Terremoto"
+        content="Cubre los daños estructurales y pérdidas causadas por incendios y terremotos, salvaguardando tu propiedad ante desastres naturales."
+      />
     </div>
   </div>
   

@@ -1,0 +1,14 @@
+---
+const { title, content } = Astro.props
+
+
+---
+
+<div class="bg-neutral-300 rounded-lg py-4 flex flex-col justify-center items-center w-[27rem]">
+    <div class="flex justify-center px-8">
+        <p class="text-center text-lg text-gray-800">{title}</p>
+    </div>
+    <div class="flex justify-normal px-8">
+        <p class="text-justify text-md text-gray-600">{content}</p>
+    </div>
+</div>
